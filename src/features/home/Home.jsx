@@ -9,9 +9,11 @@ import HikingIcon from '@mui/icons-material/Hiking';
 import MapIcon from '@mui/icons-material/Map';
 import StarIcon from '@mui/icons-material/Star';
 import { TREKKIN_THEME } from '../../configs/theme';
+import { useNavigate } from 'react-router-dom';
 import useTrekkins from '../../hooks/useTrekkins';
 
 const Home = () => {
+  const navigate = useNavigate();
   const { obtenerTrekkins, obtenerProvincias, obtenerDificultades } = useTrekkins();
 
   const [data, setData] = useState([]);
@@ -169,7 +171,7 @@ const Home = () => {
               ))
             : data.map((trekkin) => (
                 <Grid key={trekkin.id} size={{ xs: 12, sm: 6, md: 4 }}>
-                  <CardHome trekkin={trekkin} onVerDetalle={(t) => console.log('Ver detalle', t)} />
+                  <CardHome trekkin={trekkin} onVerDetalle={(t) => navigate(`/trekkin/${t.id}`)} />
                 </Grid>
               ))}
         </Grid>

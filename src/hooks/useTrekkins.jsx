@@ -1,4 +1,4 @@
-import { obtenerDificultades, obtenerProvincias, obtenerTrekkins } from '../services/trekkinService';
+import { obtenerDificultades, obtenerProvincias, obtenerTrekkinPorId, obtenerTrekkins } from '../services/trekkinService';
 
 import { useCallback } from 'react';
 
@@ -8,6 +8,15 @@ const useTrekkins = () => {
       return await obtenerTrekkins(filtros);
     } catch (error) {
       console.error('Error en la consulta de Trekkins:', error);
+      throw error;
+    }
+  }, []);
+
+  const obtenerTrekkinPorIdServicio = useCallback(async (id) => {
+    try {
+      return await obtenerTrekkinPorId(id);
+    } catch (error) {
+      console.error('Error en la consulta del Trekkin:', error);
       throw error;
     }
   }, []);
@@ -32,6 +41,7 @@ const useTrekkins = () => {
 
   return {
     obtenerTrekkins: obtenerTrekkinsServicio,
+    obtenerTrekkinPorId: obtenerTrekkinPorIdServicio,
     obtenerProvincias: obtenerProvinciasServicio,
     obtenerDificultades: obtenerDificultadesServicio,
   };

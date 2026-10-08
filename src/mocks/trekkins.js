@@ -7,6 +7,8 @@ export const DIFICULTADES = ['Fácil', 'Moderada', 'Difícil', 'Experto'];
 export const TREKKINS = [
   {
     id: 1,
+    latitud: -31.9891,
+    longitud: -64.9356,
     nombre: 'Cerro Champaquí',
     provincia: 'Córdoba',
     dificultad: 'Moderada',
@@ -21,6 +23,8 @@ export const TREKKINS = [
   },
   {
     id: 2,
+    latitud: -49.2706,
+    longitud: -73.0005,
     nombre: 'Laguna de los Tres',
     provincia: 'Santa Cruz',
     dificultad: 'Difícil',
@@ -35,6 +39,8 @@ export const TREKKINS = [
   },
   {
     id: 3,
+    latitud: -31.6667,
+    longitud: -64.7,
     nombre: 'Quebrada del Condorito',
     provincia: 'Córdoba',
     dificultad: 'Fácil',
@@ -49,6 +55,8 @@ export const TREKKINS = [
   },
   {
     id: 4,
+    latitud: -41.183,
+    longitud: -71.474,
     nombre: 'Refugio Frey',
     provincia: 'Río Negro',
     dificultad: 'Moderada',
@@ -63,6 +71,8 @@ export const TREKKINS = [
   },
   {
     id: 5,
+    latitud: -32.6497,
+    longitud: -70.0133,
     nombre: 'Aconcagua – Plaza de Mulas',
     provincia: 'Mendoza',
     dificultad: 'Experto',
@@ -77,6 +87,8 @@ export const TREKKINS = [
   },
   {
     id: 6,
+    latitud: -39.637,
+    longitud: -71.502,
     nombre: 'Volcán Lanín – Base',
     provincia: 'Neuquén',
     dificultad: 'Difícil',
@@ -91,6 +103,8 @@ export const TREKKINS = [
   },
   {
     id: 7,
+    latitud: -24.789,
+    longitud: -65.395,
     nombre: 'Cerro San Bernardo',
     provincia: 'Salta',
     dificultad: 'Fácil',
@@ -105,6 +119,8 @@ export const TREKKINS = [
   },
   {
     id: 8,
+    latitud: -26.867,
+    longitud: -65.728,
     nombre: 'Cerro Ñuñorco',
     provincia: 'Tucumán',
     dificultad: 'Moderada',

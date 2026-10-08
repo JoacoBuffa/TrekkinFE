@@ -21,7 +21,6 @@ import { useState } from 'react';
 
 const NAV_ITEMS = [
   { label: 'Inicio', to: '/' },
-  { label: 'Explorar', to: '/explorar' },
   { label: 'Mis salidas', to: '/mis-salidas' },
 ];
 
